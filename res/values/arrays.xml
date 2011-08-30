@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="comunas">
+        <item>AISEN</item>
+        <item>ALGARROBO</item>
+        <item>ALHUE</item>
+        <item>ALTO BIOBIO</item>
+        <item>ALTO DEL CARMEN</item>
+        <item>ALTO HOSPICIO</item>
+        <item>ANCUD</item>
+        <item>ANDACOLLO</item>
+        <item>ANGOL</item>
+        <item>ANTARTICA</item>
+        <item>ANTOFAGASTA</item>
+        <item>ANTUCO</item>
+        <item>ARAUCO</item>
+        <item>ARICA</item>
+        <item>BUIN</item>
+        <item>BULNES</item>
+        <item>CABILDO</item>
+        <item>CABO DE HORNOS</item>
+        <item>CABRERO</item>
+        <item>CALAMA</item>
+        <item>CALBUCO</item>
+        <item>CALDERA</item>
+        <item>CALERA</item>
+        <item>CALERA DE TANGO</item>
+        <item>CALLE LARGA</item>
+        <item>CAMARONES</item>
+        <item>CAMINA</item>
+        <item>CANELA</item>
+        <item>CANETE</item>
+        <item>CARAHUE</item>
+        <item>CARTAGENA</item>
+        <item>CASABLANCA</item>
+        <item>CASTRO</item>
+        <item>CATEMU</item>
+        <item>CAUQUENES</item>
+        <item>CERRILLOS</item>
+        <item>CERRO NAVIA</item>
+        <item>CHAITEN</item>
+        <item>CHANARAL</item>
+        <item>CHANCO</item>
+        <item>CHEPICA</item>
+        <item>CHIGUAYANTE</item>
+        <item>CHILE CHICO</item>
+        <item>CHILLAN</item>
+        <item>CHILLAN VIEJO</item>
+        <item>CHIMBARONGO</item>
+        <item>CHOL CHOL</item>
+        <item>CHONCHI</item>
+        <item>CISNES</item>
+        <item>COBQUECURA</item>
+        <item>COCHAMO</item>
+        <item>COCHRANE</item>
+        <item>CODEGUA</item>
+        <item>COELEMU</item>
+        <item>COIHAIQUE</item>
+        <item>COIHUECO</item>
+        <item>COINCO</item>
+        <item>COLBUN</item>
+        <item>COLCHANE</item>
+        <item>COLINA</item>
+        <item>COLLIPULLI</item>
+        <item>COLTAUCO</item>
+        <item>COMBARBALA</item>
+        <item>CONCEPCION</item>
+        <item>CONCHALI</item>
+        <item>CONCON</item>
+        <item>CONSTITUCION</item>
+        <item>CONTULMO</item>
+        <item>COPIAPO</item>
+        <item>COQUIMBO</item>
+        <item>CORONEL</item>
+        <item>CORRAL</item>
+        <item>CUNCO</item>
+        <item>CURACAUTIN</item>
+        <item>CURACAVI</item>
+        <item>CURACO DE VELEZ</item>
+        <item>CURANILAHUE</item>
+        <item>CURARREHUE</item>
+        <item>CUREPTO</item>
+        <item>CURICO</item>
+        <item>DALCAHUE</item>
+        <item>DIEGO DE ALMAGRO</item>
+        <item>DONIHUE</item>
+        <item>EL BOSQUE</item>
+        <item>EL CARMEN</item>
+        <item>EL MONTE</item>
+        <item>EL QUISCO</item>
+        <item>EL TABO</item>
+        <item>EMPEDRADO</item>
+        <item>ERCILLA</item>
+        <item>ESTACION CENTRAL</item>
+        <item>FLORIDA</item>
+        <item>FREIRE</item>
+        <item>FREIRINA</item>
+        <item>FRESIA</item>
+        <item>FRUTILLAR</item>
+        <item>FUTALEUFU</item>
+        <item>FUTRONO</item>
+        <item>GALVARINO</item>
+        <item>GENERAL LAGOS</item>
+        <item>GORBEA</item>
+        <item>GRANEROS</item>
+        <item>GUAITECAS</item>
+        <item>HIJUELAS</item>
+        <item>HUALAIHUE</item>
+        <item>HUALANE</item>
+        <item>HUALPEN</item>
+        <item>HUALQUI</item>
+        <item>HUARA</item>
+        <item>HUASCO</item>
+        <item>HUECHURABA</item>
+        <item>ILLAPEL</item>
+        <item>INDEPENDENCIA</item>
+        <item>IQUIQUE</item>
+        <item>ISLA DE MAIPO</item>
+        <item>ISLA DE PASCUA</item>
+        <item>JUAN FERNANDEZ</item>
+        <item>LA CISTERNA</item>
+        <item>LA CRUZ</item>
+        <item>LA ESTRELLA</item>
+        <item>LA FLORIDA</item>
+        <item>LA GRANJA</item>
+        <item>LA HIGUERA</item>
+        <item>LA LIGUA</item>
+        <item>LA PINTANA</item>
+        <item>LA REINA</item>
+        <item>LA SERENA</item>
+        <item>LA UNION</item>
+        <item>LAGO RANCO</item>
+        <item>LAGO VERDE</item>
+        <item>LAGUNA BLANCA</item>
+        <item>LAJA</item>
+        <item>LAMPA</item>
+        <item>LANCO</item>
+        <item>LAS CABRAS</item>
+        <item>LAS CONDES</item>
+        <item>LAUTARO</item>
+        <item>LEBU</item>
+        <item>LICANTEN</item>
+        <item>LIMACHE</item>
+        <item>LINARES</item>
+        <item>LITUECHE</item>
+        <item>LLAILLAY</item>
+        <item>LLANQUIHUE</item>
+        <item>LO BARNECHEA</item>
+        <item>LO ESPEJO</item>
+        <item>LO PRADO</item>
+        <item>LOLOL</item>
+        <item>LONCOCHE</item>
+        <item>LONGAVI</item>
+        <item>LONQUIMAY</item>
+        <item>LOS ALAMOS</item>
+        <item>LOS ANDES</item>
+        <item>LOS ANGELES</item>
+        <item>LOS LAGOS</item>
+        <item>LOS MUERMOS</item>
+        <item>LOS SAUCES</item>
+        <item>LOS VILOS</item>
+        <item>LOTA</item>
+        <item>LUMACO</item>
+        <item>MACHALI</item>
+        <item>MACUL</item>
+        <item>MAFIL</item>
+        <item>MAIPU</item>
+        <item>MALLOA</item>
+        <item>MARCHIHUE</item>
+        <item>MARIA ELENA</item>
+        <item>MARIA PINTO</item>
+        <item>MARIQUINA</item>
+        <item>MAULE</item>
+        <item>MAULLIN</item>
+        <item>MEJILLONES</item>
+        <item>MELIPEUCO</item>
+        <item>MELIPILLA</item>
+        <item>MOLINA</item>
+        <item>MONTE PATRIA</item>
+        <item>MOSTAZAL</item>
+        <item>MULCHEN</item>
+        <item>NACIMIENTO</item>
+        <item>NANCAGUA</item>
+        <item>NAVIDAD</item>
+        <item>NEGRETE</item>
+        <item>NINHUE</item>
+        <item>NIQUEN</item>
+        <item>NOGALES</item>
+        <item>NUEVA IMPERIAL</item>
+        <item>NUNOA</item>
+        <item>O"HIGGINS</item>
+        <item>OLIVAR</item>
+        <item>OLLAGUE</item>
+        <item>OLMUE</item>
+        <item>OSORNO</item>
+        <item>OVALLE</item>
+        <item>PADRE HURTADO</item>
+        <item>PADRE LAS CASAS</item>
+        <item>PAIGUANO</item>
+        <item>PAILLACO</item>
+        <item>PAINE</item>
+        <item>PALENA</item>
+        <item>PALMILLA</item>
+        <item>PANGUIPULLI</item>
+        <item>PANQUEHUE</item>
+        <item>PAPUDO</item>
+        <item>PAREDONES</item>
+        <item>PARRAL</item>
+        <item>PEDRO AGUIRRE CERDA</item>
+        <item>PELARCO</item>
+        <item>PELLUHUE</item>
+        <item>PEMUCO</item>
+        <item>PENAFLOR</item>
+        <item>PENALOLEN</item>
+        <item>PENCAHUE</item>
+        <item>PENCO</item>
+        <item>PERALILLO</item>
+        <item>PERQUENCO</item>
+        <item>PETORCA</item>
+        <item>PEUMO</item>
+        <item>PICA</item>
+        <item>PICHIDEGUA</item>
+        <item>PICHILEMU</item>
+        <item>PINTO</item>
+        <item>PIRQUE</item>
+        <item>PITRUFQUEN</item>
+        <item>PLACILLA</item>
+        <item>PORTEZUELO</item>
+        <item>PORVENIR</item>
+        <item>POZO ALMONTE</item>
+        <item>PRIMAVERA</item>
+        <item>PROVIDENCIA</item>
+        <item>PUCHUNCAVI</item>
+        <item>PUCON</item>
+        <item>PUDAHUEL</item>
+        <item>PUENTE ALTO</item>
+        <item>PUERTO MONTT</item>
+        <item>PUERTO NATALES</item>
+        <item>PUERTO OCTAY</item>
+        <item>PUERTO SAAVEDRA</item>
+        <item>PUERTO VARAS</item>
+        <item>PUMANQUE</item>
+        <item>PUNITAQUI</item>
+        <item>PUNTA ARENAS</item>
+        <item>PUQUELDON</item>
+        <item>PUREN</item>
+        <item>PURRANQUE</item>
+        <item>PUTAENDO</item>
+        <item>PUTRE</item>
+        <item>PUYEHUE</item>
+        <item>QUEILEN</item>
+        <item>QUELLON</item>
+        <item>QUEMCHI</item>
+        <item>QUILACO</item>
+        <item>QUILICURA</item>
+        <item>QUILLECO</item>
+        <item>QUILLON</item>
+        <item>QUILLOTA</item>
+        <item>QUILPUE</item>
+        <item>QUINCHAO</item>
+        <item>QUINTA DE TILCOCO</item>
+        <item>QUINTA NORMAL</item>
+        <item>QUINTERO</item>
+        <item>QUIRIHUE</item>
+        <item>RANCAGUA</item>
+        <item>RANQUIL</item>
+        <item>RAUCO</item>
+        <item>RECOLETA</item>
+        <item>RENAICO</item>
+        <item>RENCA</item>
+        <item>RENGO</item>
+        <item>REQUINOA</item>
+        <item>RETIRO</item>
+        <item>RINCONADA</item>
+        <item>RIO BUENO</item>
+        <item>RIO CLARO</item>
+        <item>RIO HURTADO</item>
+        <item>RIO IBANEZ</item>
+        <item>RIO NEGRO</item>
+        <item>RIO VERDE</item>
+        <item>ROMERAL</item>
+        <item>SAGRADA FAMILIA</item>
+        <item>SALAMANCA</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN BERNARDO</item>
+        <item>SAN CARLOS</item>
+        <item>SAN CLEMENTE</item>
+        <item>SAN ESTEBAN</item>
+        <item>SAN FABIAN</item>
+        <item>SAN FELIPE</item>
+        <item>SAN FERNANDO</item>
+        <item>SAN GREGORIO</item>
+        <item>SAN IGNACIO</item>
+        <item>SAN JAVIER</item>
+        <item>SAN JOAQUIN</item>
+        <item>SAN JOSE DE MAIPO</item>
+        <item>SAN JUAN DE LA COSTA</item>
+        <item>SAN MIGUEL</item>
+        <item>SAN NICOLAS</item>
+        <item>SAN PABLO</item>
+        <item>SAN PEDRO</item>
+        <item>SAN PEDRO DE ATACAMA</item>
+        <item>SAN PEDRO DE LA PAZ</item>
+        <item>SAN RAFAEL</item>
+        <item>SAN RAMON</item>
+        <item>SAN ROSENDO</item>
+        <item>SAN VICENTE</item>
+        <item>SANTA BARBARA</item>
+        <item>SANTA CRUZ</item>
+        <item>SANTA JUANA</item>
+        <item>SANTA MARIA</item>
+        <item>SANTIAGO</item>
+        <item>SANTO DOMINGO</item>
+        <item>SIERRA GORDA</item>
+        <item>TALAGANTE</item>
+        <item>TALCA</item>
+        <item>TALCAHUANO</item>
+        <item>TALTAL</item>
+        <item>TEMUCO</item>
+        <item>TENO</item>
+        <item>TEODORO SCHMIDT</item>
+        <item>TIERRA AMARILLA</item>
+        <item>TILTIL</item>
+        <item>TIMAUKEL</item>
+        <item>TIRUA</item>
+        <item>TOCOPILLA</item>
+        <item>TOLTEN</item>
+        <item>TOME</item>
+        <item>TORRES DEL PAINE</item>
+        <item>TORTEL</item>
+        <item>TRAIGUEN</item>
+        <item>TREGUACO</item>
+        <item>TUCAPEL</item>
+        <item>VALDIVIA</item>
+        <item>VALLENAR</item>
+        <item>VALPARAISO</item>
+        <item>VICHUQUEN</item>
+        <item>VICTORIA</item>
+        <item>VICUNA</item>
+        <item>VILCUN</item>
+        <item>VILLA ALEGRE</item>
+        <item>VILLA ALEMANA</item>
+        <item>VILLARRICA</item>
+        <item>VINA DEL MAR</item>
+        <item>VITACURA</item>
+        <item>YERBAS BUENAS</item>
+        <item>YUMBEL</item>
+        <item>YUNGAY</item>
+        <item>ZAPALLAR</item>
+</string-array>
+</resources>

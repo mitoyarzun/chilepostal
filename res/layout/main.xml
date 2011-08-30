@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scroll_view"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="2dip"
+				android:text="Calle" 
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="?android:attr/textColorSecondary"
+				android:focusable="false" />
+			<EditText 
+				android:id="@+id/edit_calle" 
+				android:layout_width="wrap_content"
+				android:minWidth="200dp" 
+				android:maxWidth="200dp"
+				android:singleLine="true"
+				android:text=""
+				android:layout_height="fill_parent" />
+		</LinearLayout>
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="2dip"
+				android:text="Numero" 
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="?android:attr/textColorSecondary"
+				android:focusable="false" />
+			<EditText 
+				android:id="@+id/edit_numero"
+				android:layout_width="wrap_content" 
+				android:minWidth="80dp"
+				android:layout_height="fill_parent" 
+				android:text=""
+				android:inputType="number" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="2dip"
+			android:text="Comuna" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="?android:attr/textColorSecondary"
+			android:focusable="false" />
+		<AutoCompleteTextView 
+			android:id="@+id/edit_comuna"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:singleLine="true"
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			>
+			<Button
+			android:id="@+id/btn_buscar"
+			android:layout_width="wrap_content"
+			android:width="200dp"
+			android:layout_height="wrap_content"
+			android:text="Buscar"
+		/>
+		<Button
+			android:id="@+id/btn_historial"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/btn_buscar"
+			android:text="Historial"
+			/>
+
+		</RelativeLayout>
+	</LinearLayout>
+	<TextView
+		style="?android:attr/listSeparatorTextViewStyle"
+		android:id="@+id/label_last"
+		android:text="Última búsqueda"
+		android:layout_marginTop="5dip"
+	/>
+	<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+		android:paddingTop="5dip"
+		android:paddingBottom="8dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:mode="twoLine">
+		<TextView
+    		android:id="@+id/text1"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="6dip"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:focusable="true"
+    		android:focusableInTouchMode="true"
+    		android:text="Texto1"	
+    	/>
+		<TextView
+	    	android:id="@+id/text2"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@id/text1"
+    		android:layout_alignLeft="@id/text1"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:focusable="true"
+    		android:focusableInTouchMode="true"
+    		android:text="Texto 2"
+    	/>
+    </TwoLineListItem>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_alignParentBottom="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+		<TextView
+		style="?android:attr/listSeparatorTextViewStyle"
+		android:id="@+id/label_about"
+		android:text="Acerca de..."
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip"
+		/>
+	<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+		android:paddingTop="5dip"
+		android:paddingBottom="8dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:mode="twoLine">
+		<TextView
+    		android:id="@+id/text_appname"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="6dip"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:text="Códigos Postales Chile"	
+    	/>
+		<TextView
+	    	android:id="@+id/text_appcredits"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@id/text_appname"
+    		android:layout_alignLeft="@id/text_appname"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:text="Jaime Oyarzún mito@lapalta.net\nCódigos postales: Correos de Chile"
+    	/>
+    </TwoLineListItem>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
