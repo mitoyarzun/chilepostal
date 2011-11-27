@@ -102,8 +102,7 @@ public class PostalHistory extends ListActivity {
 	public void deleteFromDatabase(String direccion, int postal) {
 		initDB();
 		if (db!=null) {
-			// TODO: make safe input
-			db.execSQL("DELETE FROM codigos WHERE direccion = '"+direccion+ "' AND codigo_postal = '"+postal+"';");
+			db.delete(this.DB_TABLE, "direccion = ? AND codigo_postal = ?", new String[] { direccion, Integer.toString(postal) });
 			fillList();
 		}
 	}
