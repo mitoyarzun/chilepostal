@@ -22,6 +22,10 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class PostalHistory extends ListActivity {
 	
+	private final static int COPY_POSTAL_CODE = Menu.FIRST;
+	private final static int COPY_ADDRESS = Menu.FIRST + 1;
+	private final static int DELETE_ITEM = Menu.FIRST + 2;
+	
 	private SQLiteDatabase db = null;
 	private String DB_NAME = "chilepostal.db";
 	private String DB_TABLE = "codigos";
@@ -58,9 +62,9 @@ public class PostalHistory extends ListActivity {
     public void onCreateContextMenu(ContextMenu menu, View v,
         ContextMenuInfo menuInfo) {
         menu.setHeaderTitle("Opciones");
-        menu.add(Menu.NONE, 0, 0, "Copiar código postal");
-        menu.add(Menu.NONE, 1, 1, "Copiar dirección");
-        menu.add(Menu.NONE, 2, 2, "Borrar ítem");
+        menu.add(Menu.NONE, COPY_POSTAL_CODE, 0, "Copiar código postal");
+        menu.add(Menu.NONE, COPY_ADDRESS, 1, "Copiar dirección");
+        menu.add(Menu.NONE, DELETE_ITEM, 2, "Borrar ítem");
         
     }
 
@@ -71,15 +75,13 @@ public class PostalHistory extends ListActivity {
 	    int menuItemIndex = item.getItemId();
 	    
 	    ClipboardManager cM = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-	    if (menuItemIndex==1) {
+	    if (menuItemIndex == COPY_ADDRESS) {
 	    	showNotif("Copiada dirección: "+item_direccion.get(info.position));
 	    	cM.setText(item_direccion.get(info.position));
-	    }
-	    if (menuItemIndex==0) {
+	    } else if (menuItemIndex == COPY_POSTAL_CODE) {
 	    	showNotif("Copiado código postal: "+item_postal.get(info.position));
 	    	cM.setText(item_postal.get(info.position).toString());
-	    }
-	    if (menuItemIndex==2) {
+	    } else if (menuItemIndex == DELETE_ITEM) {
 	    	deleteFromDatabase(item_direccion.get(info.position), item_postal.get(info.position));
 	    }
 	    
