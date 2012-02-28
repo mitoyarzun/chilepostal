@@ -12,10 +12,9 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.text.ClipboardManager;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -33,7 +32,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ChilePostal extends Activity implements Runnable {
+public class ChilePostal extends Activity {
 	
 	private EditText edit_calle = null;
 	private EditText edit_numero = null;
@@ -50,16 +49,14 @@ public class ChilePostal extends Activity implements Runnable {
 	private String DB_NAME = "chilepostal.db";
 	private String DB_TABLE = "codigos";
 	
-	private ProgressDialog dialog = null;
-	
 	int current_postal;
 	String direccion;
 	
 	public ProgressDialog createDialog(String str) {
-        this.dialog = new ProgressDialog(this);
-        this.dialog.setMessage(str);
-        this.dialog.setIndeterminate(true);
-        this.dialog.setCancelable(false);
+        ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setMessage(str);
+        dialog.setIndeterminate(true);
+        dialog.setCancelable(false);
         return dialog;
 	}
 	
@@ -97,11 +94,8 @@ public class ChilePostal extends Activity implements Runnable {
 		return false;
 	}
 	public void loadPostal() {
-		createDialog("Espere...");
-		dialog.show();
 		normalizeFields();
-        Thread thread = new Thread(this);
-        thread.start();
+		new SearchPostalCodeTask().execute(edit_calle.getText().toString(), edit_numero.getText().toString(), edit_comuna.getText().toString());
 	}
 	
 	public void initDB()
@@ -165,37 +159,46 @@ public class ChilePostal extends Activity implements Runnable {
         c.close();
 	}
 	
-	public void run() {
-		PostalGetter pg = new PostalGetter();
-		try {
-			//showNotif("Comuna: "+edit_comuna.getText().toString());
-			current_postal = pg.getPostal(
-					edit_comuna.getText().toString(),
-					edit_calle.getText().toString(),
-					Integer.parseInt(edit_numero.getText().toString()));
-			direccion = edit_calle.getText().toString() + " " + edit_numero.getText().toString() + ", " + edit_comuna.getText().toString();
-			handler.sendEmptyMessage(0);
-		} catch (Exception e ) {
-			showNotif("Error: "+e.toString());
+	class SearchPostalCodeTask extends AsyncTask<String, Void, Integer>{
+		private ProgressDialog dialog;
+		private Exception exception = null;
+		
+		@Override
+		protected void onPreExecute() {
+			dialog = createDialog("Espere...");
+			dialog.show();
 		}
-	}
-	
-	public Handler handler = new Handler() {
-		public void handleMessage(Message msg) {
-			if (dialog!=null) {
-				dialog.dismiss();
+
+		@Override
+		protected Integer doInBackground(String... params) {
+			PostalGetter pg = new PostalGetter();
+			try {
+				String calle = params[0];
+				int numero = Integer.parseInt(params[1]);
+				String comuna = params[2];
+				current_postal = pg.getPostal(comuna, calle, numero);
+				direccion = calle + " " + numero + ", " + comuna;
+				return current_postal;
+			} catch (Exception e ) {
+				exception = e; 
+				return 0;
 			}
-			//createDialog("Codigo: "+currentPostal).show();
-			if (current_postal!=0) {
-				//showNotif("Codigo encontrado. Se ha guardado en la lista de búsquedas recientes.");
+		}
+		
+		@Override
+		protected void onPostExecute(Integer postalCode) {
+			dialog.dismiss();
+			if(exception != null){
+				showNotif("Error: " + exception.toString());
+			} else if (postalCode != 0) {
 				showNotif("Código encontrado");
 				savePostal();
-				//savePostal();
 			} else {
 				showNotif("No se ha encontrado el código. Por favor busque nuevamente.");
 			}
 		}
-	};
+	}
+	
 	public void closeKeyboard()
 	{
 		if (btn_buscar!=null) {
